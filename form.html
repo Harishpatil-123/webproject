@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+</head>
+<body>
+    <h2>registration form</h2>
+    <form action="/">
+        <!-- name -->
+        <label for="username">name:</label>
+        <input
+         type="text" 
+        placeholder="enter your full name"
+        id="username"
+        name="fullname"
+        required
+        /><br/><br/>
+        <!-- email -->
+        <label for="email">email:</label>
+        <input type="email"
+        id="email"
+        name="email" required /><br/><br/>
+        <!-- password -->
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" required/><br/><br/>
+        <!-- phone number -->
+        <label for="phone">phone number:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <!-- gender -->
+        <label>gender</label><br/><br/>
+        <input type="radio" id="male" name="gender" value="male"/>
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" checked value="female"/>
+        <label for="female">female</label>
+        <input type="radio" id="others" name="gender" value="others"/>
+        <label for="others">others</label><br><br>
+        <!-- dob -->
+        <label for="dob">date of birth</label>
+        <input type="date" name="dob"><br><br>
+        <label>course:</label>
+        <!-- course -->
+        <select name="course">
+            <option value="btech" selected >B.E.</option>
+            <option value="mtech">M.E</option>
+            <option value="diploma">diploma</option>
+        </select><br><br>
+        <label>adress:</label>
+        <textarea name="adress" rows="3" col="30"></textarea><br/><br/>
+
+        <!--checkbox-->
+        <label>hobbies:</label><br/><br/>
+        <input type="checkbox" name="hobbies" id="reading"
+        value="reading"/>
+        <label for="reading">reading</label>
+        <input
+        type="checkbox"
+        name="hobbies"
+        id="dancing"
+        value="dancing"
+        checked
+        />
+        <label for="dancing">dancing</label><br/><br/>
+        <!-- submit -->
+        <button type="submit">submit</button>
+
+    </form>
+</body>
+</html>
