@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Webpage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+font-size: 1rem;
+}
+header {
+background-color: navy;
+color: white;
+
+text-align: center;
+padding: 2vh;
+}
+.container {
+width: 80%;
+margin: 2em auto;
+display: flex;
+gap: 2%;
+}
+.box {
+background-color: lightblue;
+width: 50%;
+padding: 2%;
+text-align: center;
+font-size: 2vw;
+}
+/* Tablet */
+@media (max-width: 768px) {
+.container {
+width: 90%;
+}
+.box {
+font-size: 1.2rem;
+}
+}
+/* Mobile */
+@media (max-width: 480px) {
+.container {
+flex-direction: column;
+}
+.box {
+width: 96%;
+font-size: 1rem;
+margin-bottom: 10px;
+}
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1>My Webpage</h1>
+</header>
+<div class="container">
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+</div>
+</body>
+</html>
